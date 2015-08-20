@@ -11,7 +11,6 @@ object Application extends Controller {
   }
 
   def posts = Action {
-    implicit val postWrites = Json.writes[Post]
     val posts = Post.posts
     Ok(Json.toJson(posts))
   }
