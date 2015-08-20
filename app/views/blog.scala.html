@@ -1,0 +1,6 @@
+@import model.Post
+@(posts: Seq[Post])
+
+@for(p <- posts) {
+    @post(p)
+}
