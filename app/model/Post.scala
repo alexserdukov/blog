@@ -8,5 +8,5 @@ case class Post (title: String, author: String, date: Date, text: String)
 
 object Post{
   implicit val postWrites = Json.writes[Post]
-  val posts = Seq{new Post("title", "author", new Date(), "some text")}
+  val posts = Seq{new Post("My first blog topic", "Alex", new Date(), "some text")}
 }
